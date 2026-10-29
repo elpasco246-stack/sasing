@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activities | Healthy Study Habits</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <p class="course-title">Healthy Study Habits</p>
+    <div class="progress"><div></div></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="objectives.html">Objectives</a></li>
+      <li><a href="content.html">Core Content</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="summary.html">Summary</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Activities</h1>
+
+    <!-- Multiple choice -->
+    <div class="idevice activity">
+      <h2 class="idevice-title">Quiz: multiple choice</h2>
+      <div class="idevice-body">
+        <form class="quiz">
+          <div class="question" data-answer="b"
+               data-explain="Spacing sessions out strengthens long-term memory."
+               data-hint="Think about spreading study over several days.">
+            <div class="prompt">1. Which approach is best for long-term memory?</div>
+            <div class="options">
+              <label><input type="radio" name="q1" value="a"> One 3-hour cram session the night before</label>
+              <label><input type="radio" name="q1" value="b"> Several short sessions spread over days</label>
+              <label><input type="radio" name="q1" value="c"> Re-reading the same page many times</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="question" data-answer="c"
+               data-explain="Retrieving information from memory is what strengthens it."
+               data-hint="Which option makes you retrieve information yourself?">
+            <div class="prompt">2. Which of these is an active-recall technique?</div>
+            <div class="options">
+              <label><input type="radio" name="q2" value="a"> Highlighting every sentence</label>
+              <label><input type="radio" name="q2" value="b"> Listening to music</label>
+              <label><input type="radio" name="q2" value="c"> Writing down everything you remember with the book closed</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="question" data-answer="a"
+               data-explain="25 minutes of work, 5 minutes of rest."
+               data-hint="It is a short work block followed by a very short rest.">
+            <div class="prompt">3. In the 25/5 rhythm, what happens after 25 minutes?</div>
+            <div class="options">
+              <label><input type="radio" name="q3" value="a"> A 5-minute break</label>
+              <label><input type="radio" name="q3" value="b"> A 2-hour break</label>
+              <label><input type="radio" name="q3" value="c"> Another 25 minutes without stopping</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <button type="submit" class="btn">Check answers</button>
+          <button type="reset" class="btn secondary">Try again</button>
+          <div class="score"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- True / False -->
+    <div class="idevice activity">
+      <h2 class="idevice-title">True or false</h2>
+      <div class="idevice-body">
+        <form class="quiz">
+          <div class="question" data-answer="false"
+               data-explain="Sleep helps consolidate what you learned."
+               data-hint="Memories are consolidated during sleep.">
+            <div class="prompt">1. Staying up all night is a good way to learn more.</div>
+            <div class="options">
+              <label><input type="radio" name="tf1" value="true"> True</label>
+              <label><input type="radio" name="tf1" value="false"> False</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="question" data-answer="true"
+               data-explain="Self-testing beats passive re-reading."
+               data-hint="Testing yourself is more effective than re-reading.">
+            <div class="prompt">2. Testing yourself can help you remember better than re-reading.</div>
+            <div class="options">
+              <label><input type="radio" name="tf2" value="true"> True</label>
+              <label><input type="radio" name="tf2" value="false"> False</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <button type="submit" class="btn">Check answers</button>
+          <button type="reset" class="btn secondary">Try again</button>
+          <div class="score"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="idevice reflection">
+      <h2 class="idevice-title">Reflection</h2>
+      <div class="idevice-body">
+        <p>Which technique will you try this week, and when exactly will you do it?</p>
+        <textarea class="reflect" id="plan" placeholder="Write your plan here..."></textarea>
+        <p style="font-size:.85rem;color:#57606a;margin-bottom:0">Your text is saved only in this browser.</p>
+      </div>
+    </div>
+
+    <div class="pager">
+      <a href="content.html">&larr; Core Content</a>
+      <a href="summary.html">Next: Summary &rarr;</a>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
